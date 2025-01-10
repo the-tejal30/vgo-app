@@ -26,16 +26,16 @@ const Dashboard = () => {
       { name: 'Total Investments Amount', y: 10.9 },
       { name: 'Total Stock Units', y: 30.5 },
     ],
-    'My Profits': [
-      { name: 'Team Profits', y: 5.9 },
-      { name: 'Child Team Profits', y: 15.5 },
+    'My Cashpoints': [
+      { name: 'My Cashpoints', y: 5.9 },
+      { name: 'Total Cashpoints', y: 15.5 },
     ],
-    'My Cashpoints': {
+    'My Profits': {
       chart: {
         type: 'pie',
       },
       title: {
-        text: 'My Cashpoints',
+        text: 'My Profits',
       },
       plotOptions: {
         pie: {
@@ -47,11 +47,11 @@ const Dashboard = () => {
       },
       series: [
         {
-          name: 'Cashpoints',
+          name: 'Profits',
           innerSize: '50%',
           data: [
-            { name: 'Total Cashpoints', y: 2000 },
-            { name: 'My Cashpoints', y: 100 },
+            { name: 'Total Profits', y: 2000 },
+            { name: 'My Profits', y: 100 },
           ],
         },
       ],
@@ -63,8 +63,8 @@ const Dashboard = () => {
     'My Transactions': 'bar',
     'My Subscriptions': 'line',
     'My Investments': 'column',
-    'My Profits': 'area',
-    'My Cashpoints': 'semi-circle-donut',
+    'My Profits': 'semi-circle-donut',
+    'My Cashpoints': 'area',
   };
 
   // Define a color palette for each chart type
@@ -98,7 +98,7 @@ const Dashboard = () => {
       </div>
       <div className="charts-container">
         {numberTileList.map((value) => {
-          const chartConfig = value.title === 'My Cashpoints' 
+          const chartConfig = value.title === 'My Profits' 
             ? chartData[value.title]
             : {
                 chart: { type: chartTypes[value.title] },
