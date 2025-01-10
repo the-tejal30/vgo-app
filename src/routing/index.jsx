@@ -21,7 +21,7 @@ const MyProducts = lazy(() =>
 const MyStores = lazy(()=> 
   import("../components/Services/presentation/MyStores"));
 const VGOToANY = lazy(() =>
-  import("../components/payments/presentation/VGOToANY")
+  import("../components/payments/presentation/VGOToAny")
 );
 const ANYToVGO = lazy(() =>
   import("../components/payments/presentation/ANYToVGO")
