@@ -1,0 +1,66 @@
+ // Import your variables for colors, fonts, etc.
+
+.login-container {
+  padding: 20px;
+  min-width: 35%;
+  height: 45%;
+  margin: auto;
+  background-color: white; // Use your primary light color
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  h2 {
+    color: var(--color-primary); // Use your primary color for the title
+    // margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .ant-form-item {
+    margin-bottom: 15px;
+
+    label {
+      font-weight: bold;
+      color: var(--color-primary); // Use your primary color for labels
+    }
+
+    .ant-input,
+    .ant-input-password {
+      border-radius: 4px;
+     
+      &:focus {
+        border-color: var(--color-primary); // Change border color on focus
+        box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+      }
+    }
+  }
+
+  .ant-btn-primary {
+    background-color: var(--color-primary); // Use your primary color
+    border-color: var(--color-primary);
+    width: 100%;
+    border-radius: 4px;
+    color: #3686a0 !important; 
+    &:hover {
+      background-color: var(--color-primary-light); // Use your primary light color
+      border-color: var(--color-primary-light);
+    }
+  }
+
+  .ant-btn-link {
+    color: #3686a0; 
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+      color: #3686a0; 
+    }
+  }
+
+  .space {
+    margin-top: 10px;
+  }
+}
+
+.login-btn span{
+  color: #3686a0 !important;
+}

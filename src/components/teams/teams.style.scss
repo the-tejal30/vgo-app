@@ -1,0 +1,34 @@
+.candidates-col {
+    .ant-card-body {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    .ant-card .ant-card-body::before {
+        content: none !important;
+    }
+
+    .ant-card .ant-card-body::after {
+        content: none !important;
+    }
+    
+}
+
+.blinking-btn {
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
